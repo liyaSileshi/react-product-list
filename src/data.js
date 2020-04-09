@@ -42,5 +42,5 @@ console.log(categoriesWithCountName)
 
 
 
-
-export {data, categories} //  export the native JS array
+export default data
+export {categories, categoriesWithCount, categoriesWithCountName, categories_unique} //  export the native JS array
