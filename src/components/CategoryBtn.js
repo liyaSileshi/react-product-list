@@ -8,7 +8,7 @@ function CategoryBtn(props) {
     return (
       <button className = 'category-btn'
         onClick={() => props.setCategory(item)}
-        key={`-${item}`}>{item}{categoriesWithCount[item]}
+        key={`-${item}`}>{item} {categoriesWithCount[item]}
       </button>
       )
       }

@@ -8,7 +8,7 @@ class FilterProducts extends Component{
   constructor (props) {
       super(props);
       this.state = {
-          currentCategory: 'all'
+          currentCategory: 'All'
       }
   }
 
@@ -20,9 +20,9 @@ class FilterProducts extends Component{
     return(
         <div>
           <CategoryBtn setCategory={(name) => {this.setCategory(name)}}/>
-          <button className='category-btn' onClick = {() => this.setCategory('all')}> All </button>
+          <button className='category-btn' onClick = {() => this.setCategory('All')}> All </button>
           <div>
-            {this.state.currentCategory}
+            Category name: {this.state.currentCategory}
           </div>
           <div className='products-list'>
             <Inventories currentCategory={this.state.currentCategory}/>

@@ -3,7 +3,7 @@ import data from '../data.json' //   import data.json
 import './Inventory.css'
 
 function Inventories(props) {
-    if(props.currentCategory === 'all') { //    if 'all' is clicked
+    if(props.currentCategory === 'All') { //    if 'all' is clicked
           return data.map((item) => {
         return <div className='product' key = {`-${item.id}`}>
                   <h2>{item.name}</h2>
