@@ -10,7 +10,6 @@ function Inventories(props) {
                   <p>{item.price}</p>
                   <p>{item.description}</p>
               </div>
-
       })
     }
     else {  //   else filter by the button names
@@ -25,6 +24,20 @@ function Inventories(props) {
     })
 }
 } 
+// Challenge 13: Use Array.reduce() to get the sum of all
+// of the prices for all Products.
+function SumAllPrices() {
+    return data.reduce((total_price, item) => {
+        //  remove the $ sign
+        let price = item.price.substring(1)
+        //  change from string to float
+        price = parseFloat(price)
+        total_price += price
+        //  return total price
+        return parseFloat(total_price.toFixed(2))
+    }, 0)
+}
 
 
 export default Inventories;
+export {SumAllPrices};
