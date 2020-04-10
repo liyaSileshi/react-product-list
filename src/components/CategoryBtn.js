@@ -1,5 +1,5 @@
-import React, {Component} from 'react'
-import data, {categories, categoriesWithCount, categoriesWithCountName, categories_unique} from '../data'
+import React from 'react'
+import {categories, categoriesWithCount, categories_unique} from '../data'
 import './CategoryBtn.css'
 
 function CategoryBtn(props) {
@@ -8,7 +8,7 @@ function CategoryBtn(props) {
     return (
       <button className = 'category-btn'
         onClick={() => props.setCategory(item)}
-        key={`-${item}`}>{item} {categoriesWithCount[item]}
+        key={`-${item}`} count={categoriesWithCount[item]}>{item}
       </button>
       )
       }

@@ -3,7 +3,7 @@ import CategoryBtn from './CategoryBtn'
 import Inventories, {SumAllPrices} from './Inventory'
 import './FilterProducts.css'
 import data from '../data.json' //   import data.json
-
+// import {categoriesWithCount} from '../data'
 class FilterProducts extends Component{
 
   constructor (props) {
